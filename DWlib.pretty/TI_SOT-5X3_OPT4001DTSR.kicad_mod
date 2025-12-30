@@ -206,7 +206,7 @@
 		(uuid "ccdb84ff-803d-4cbc-b776-35775cb9dc9f")
 	)
 	(embedded_fonts no)
-	(model "../library/3dmodels/TI_SOT-5X3_OPT4001DTSR.stp"
+	(model "../3dmodels/TI_SOT-5X3_OPT4001DTSR.stp"
 		(offset
 			(xyz 0 0 0)
 		)

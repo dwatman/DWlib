@@ -278,7 +278,7 @@
 		)
 	)
 	(embedded_fonts no)
-	(model "../library/3dmodels/Sensirion_SPS30.STEP"
+	(model "../3dmodels/Sensirion_SPS30.STEP"
 		(offset
 			(xyz -5.5 12 6)
 		)

@@ -459,7 +459,7 @@
 		(uuid "c2da8a36-a400-4e08-9427-611da637003b")
 	)
 	(embedded_fonts no)
-	(model "../library/3dmodels/ublox_NINA-B222-W1x2.STEP"
+	(model "../3dmodels/ublox_NINA-B222-W1x2.STEP"
 		(opacity 0.5100)
 		(offset
 			(xyz -4.75 12.7 0)

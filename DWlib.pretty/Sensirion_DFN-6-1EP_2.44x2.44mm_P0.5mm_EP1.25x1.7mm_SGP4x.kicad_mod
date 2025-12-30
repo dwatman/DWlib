@@ -215,7 +215,7 @@
 		(uuid "789268c3-44ba-407d-97c6-9b62795da383")
 	)
 	(embedded_fonts no)
-	(model "../library/3dmodels/Sensirion_SGP4x.step"
+	(model "../3dmodels/Sensirion_SGP4x.step"
 		(offset
 			(xyz 0 0 0)
 		)

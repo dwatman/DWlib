@@ -687,7 +687,7 @@
 		)
 	)
 	(embedded_fonts no)
-	(model "../library/3dmodels/STM32WBA5MMG.stp"
+	(model "../3dmodels/STM32WBA5MMG.stp"
 		(offset
 			(xyz 0 0 0)
 		)
