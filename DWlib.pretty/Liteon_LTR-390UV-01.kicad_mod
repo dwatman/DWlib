@@ -1,0 +1,219 @@
+(footprint "Liteon_LTR-390UV-01"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Liteon UV and ambient light sensor, I2C, https://optoelectronics.liteon.com/upload/download/DS86-2015-0004/LTR-390UV_Final_%20DS_V1%201.pdf")
+	(tags "liteon uv sensor")
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "713d2b8e-4ea2-4074-8d18-2a83ae23a622")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Liteon_LTR-390UV-01"
+		(at 0 2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "14d7b671-ce2e-45a9-b395-ebb80d07dd99")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d853a477-9c49-4bbe-892f-a4c8063f1543")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cc5df5af-1653-4b6f-b55a-bd47f4d15568")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.1 1.1)
+		(end -1.1 1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6ce5e7b9-1e1e-460c-a94a-d1c950a7d916")
+	)
+	(fp_line
+		(start -0.4 -1.1)
+		(end 1.1 -1.1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "404fdd83-04de-4114-b612-08ad9eb00780")
+	)
+	(fp_line
+		(start 1.1 -1.1)
+		(end 1.1 -1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "300247bb-d439-4c5c-a6da-b03cda3c38ae")
+	)
+	(fp_line
+		(start 1.1 1)
+		(end 1.1 1.1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d7c572a9-b3c1-47d1-836f-ef9e75f562bb")
+	)
+	(fp_line
+		(start 1.1 1.1)
+		(end -1.1 1.1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b57d4dc8-d45a-42cf-91f4-dbbcd798d163")
+	)
+	(fp_poly
+		(pts
+			(xy -0.9 -0.95) (xy -0.7 -1.15) (xy -1.1 -1.15)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "e544b81a-cb1a-4221-958b-2488f33b7f0e")
+	)
+	(fp_rect
+		(start -1.4 -1.2)
+		(end 1.4 1.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8eb8ee3d-c9ad-4ee6-be16-b861fd8e7081")
+	)
+	(fp_line
+		(start -0.5 -1)
+		(end -1 -0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "88706368-4f65-4a74-96e3-2dddf6711b31")
+	)
+	(fp_rect
+		(start -1 1)
+		(end 1 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "a392c6f4-27bc-4eb9-b1cd-f8c2e65a1bb7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "82add578-ce7b-4c00-b4a7-d6c1b1559a7d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.9 -0.65)
+		(size 0.65 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "58cc86c2-5717-4820-bef1-8f3b124435c7")
+	)
+	(pad "2" smd roundrect
+		(at -0.9 0)
+		(size 0.65 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "695587b9-fc2a-441e-9955-d50e67589b69")
+	)
+	(pad "3" smd roundrect
+		(at -0.9 0.65)
+		(size 0.65 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "403b2d86-f255-4c0f-a9c9-76a419f66b1c")
+	)
+	(pad "4" smd roundrect
+		(at 0.9 0.65)
+		(size 0.65 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "6e878d61-7407-4dcf-9525-d52baaba3af8")
+	)
+	(pad "5" smd roundrect
+		(at 0.9 0)
+		(size 0.65 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "474d1624-0788-4e28-9b4e-aa9fcf3d5d2a")
+	)
+	(pad "6" smd roundrect
+		(at 0.9 -0.65)
+		(size 0.65 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "27a3dbb8-d2fd-480c-877a-a07047b159ab")
+	)
+	(embedded_fonts no)
+	(model "../3dmodels/Liteon_LTR-390UV-01.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,249 @@
+(footprint "Vishay_BELOBOG-4Pin"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "Vishay")
+	(property "Reference" "REF**"
+		(at 0 -3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d6cbfefe-30a3-42ff-b00d-7a687777a820")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Vishay_BELOBOG-4Pin"
+		(at 0 4.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "78af2be2-1cd4-42e0-b059-2b0465c946ca")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "24d82492-acdd-42ba-bc5e-d8b131f913ff")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "53b32ebd-c922-4e7d-9e18-a1e6496ebfd2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -2.1 2.1)
+		(end 2.1 -2.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "5fac71cd-3794-456e-8569-f71f4dece8a7")
+	)
+	(fp_poly
+		(pts
+			(xy -2.1 1.5) (xy -2.35 1.25) (xy -2.35 1.75)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "bd1be5ac-056f-4b52-854c-6f505a283433")
+	)
+	(fp_rect
+		(start -2.25 2.25)
+		(end 2.25 -2.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "ebc9b20d-ef36-4d01-a5de-88fa65923b58")
+	)
+	(fp_line
+		(start -1.975 1.5)
+		(end -1.5 2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "9ddfffed-4dba-47bf-9ef9-f989092a886a")
+	)
+	(fp_line
+		(start -1.7 -1.5)
+		(end -1.7 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "afbdbc6c-4088-4c76-be5f-235efe81c35b")
+	)
+	(fp_line
+		(start -1.5 0.2)
+		(end 1.5 0.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "09d54146-8908-49d9-bd64-a2eb3fd5970e")
+	)
+	(fp_line
+		(start 1.5 -1.7)
+		(end -1.5 -1.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "036ff668-0482-4685-abe8-b149ee2f5995")
+	)
+	(fp_line
+		(start 1.7 0)
+		(end 1.7 -1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "5e1bddc0-2dbb-4651-b006-f7bb644a5dbb")
+	)
+	(fp_rect
+		(start -1.975 1.975)
+		(end 1.975 -1.975)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "efcb79cf-9890-4a1f-b38e-80805054919e")
+	)
+	(fp_arc
+		(start -1.7 -1.5)
+		(mid -1.641421 -1.641421)
+		(end -1.5 -1.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "0a4416e1-d6ad-4dea-a906-be06bbfcd82f")
+	)
+	(fp_arc
+		(start -1.5 0.2)
+		(mid -1.641421 0.141421)
+		(end -1.7 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "8607ecf9-53ff-493e-859a-92daedf9cfe5")
+	)
+	(fp_arc
+		(start 1.5 -1.7)
+		(mid 1.641421 -1.641421)
+		(end 1.7 -1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "f48e8a7b-34d4-4719-ad41-bfcd3882533e")
+	)
+	(fp_arc
+		(start 1.7 0)
+		(mid 1.641421 0.141421)
+		(end 1.5 0.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "6354fde8-1c05-40fb-8c48-6972866fa1a3")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e39a722e-5639-4b9e-b18e-85f3423bb1ae")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.5 1.575)
+		(size 0.35 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "9b5e2ccf-5777-45cc-b4c0-fc5a43a23c4d")
+	)
+	(pad "5" smd roundrect
+		(at 1.5 1.575)
+		(size 0.35 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "7bb2b18b-7770-4212-b2d7-b645177127c2")
+	)
+	(pad "6" smd roundrect
+		(at 1.5 -1.575)
+		(size 0.35 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "6a604cdb-cbd6-4555-9381-696b486b43c5")
+	)
+	(pad "8" smd roundrect
+		(at -1.5 -1.575)
+		(size 0.35 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "793fd3c7-1b35-4fc3-839a-5af74f658628")
+	)
+	(embedded_fonts no)
+	(model "../3dmodels/Vishay_BELOBOG.stp"
+		(offset
+			(xyz 0 0 0.35)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -90)
+		)
+	)
+)

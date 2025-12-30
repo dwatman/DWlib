@@ -1,0 +1,225 @@
+(footprint "ST_HLGA-10L_2x2mm_P0.5mm_LayoutBorder3x2y"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "ST  HLGA, 10 Pin (https://www.st.com/resource/en/datasheet/lps22df.pdf#page=44)")
+	(tags "ST HLGA NoLead")
+	(property "Reference" "REF**"
+		(at 0 -1.95 0)
+		(layer "F.SilkS")
+		(uuid "eade145c-9ff0-439a-9bd0-62e416db791b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "ST_HLGA-10L_2x2mm_P0.5mm_LayoutBorder3x2y"
+		(at 0 1.95 0)
+		(layer "F.Fab")
+		(uuid "d792412c-273c-4626-a7cf-24418e1905af")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bcf8e629-4b09-43bf-9b60-83ac66c3e306")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "edf57751-bb82-4839-84d9-2e83c9cac599")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.11 1.11)
+		(end -1.11 -0.35)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ba37cd8b-52d3-42a8-a7b8-3b7646325833")
+	)
+	(fp_line
+		(start -1.1 -1.11)
+		(end 1.11 -1.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "688c0e4e-a4e8-4d38-9719-d10af3f3d6c9")
+	)
+	(fp_line
+		(start 1.11 -1.11)
+		(end 1.11 1.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5d843b82-8331-4a2a-8d22-6cc8345219ef")
+	)
+	(fp_line
+		(start 1.11 1.11)
+		(end -1.11 1.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "88cdb31d-71ff-4c18-abc7-a75c20bd53c7")
+	)
+	(fp_poly
+		(pts
+			(xy -1.14 -0.59) (xy -1.42 -0.59) (xy -1.14 -0.87)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "efe8cd18-04d9-4272-80fb-64afbab3f98c")
+	)
+	(fp_rect
+		(start -1.25 -1.25)
+		(end 1.25 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8e51edd7-bcc3-4d69-8e0d-dcf4a7ef3973")
+	)
+	(fp_poly
+		(pts
+			(xy -1 -0.5) (xy -1 1) (xy 1 1) (xy 1 -1) (xy -0.5 -1)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e1029e21-aeb7-45f8-99de-3eaec88f82c4")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "58db92cf-2578-4ecd-9b58-bd7a4faf564d")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.76 -0.25)
+		(size 0.3 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(chamfer_ratio 0.2)
+		(chamfer top_right)
+		(uuid "329ca87f-1984-410a-8340-4c78d76dc956")
+	)
+	(pad "2" smd roundrect
+		(at -0.76 0.25)
+		(size 0.3 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "34e6bd0e-5df1-4608-9fe5-a533b723e603")
+	)
+	(pad "3" smd roundrect
+		(at -0.5 0.76 90)
+		(size 0.3 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "32d0ac41-462b-4b1b-a044-a6241d5ea364")
+	)
+	(pad "4" smd roundrect
+		(at 0 0.76 90)
+		(size 0.3 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "5655dab6-99fa-4ba7-a5d9-edeaed4ddc46")
+	)
+	(pad "5" smd roundrect
+		(at 0.5 0.76 90)
+		(size 0.3 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "b17dfc09-ef37-48a7-9cf6-72426e758c0a")
+	)
+	(pad "6" smd roundrect
+		(at 0.76 0.25)
+		(size 0.3 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "0b836e69-9109-42db-b593-a8fe8d2aeb08")
+	)
+	(pad "7" smd roundrect
+		(at 0.76 -0.25)
+		(size 0.3 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "36bbf2ad-0c66-4877-8cab-79c2ffff7dd5")
+	)
+	(pad "8" smd roundrect
+		(at 0.5 -0.76 90)
+		(size 0.3 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "6f80d39e-8408-47ee-9857-dabceeacc5cc")
+	)
+	(pad "9" smd roundrect
+		(at 0 -0.76 90)
+		(size 0.3 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "439253e4-b478-40b0-b5c3-26e71c51fbb8")
+	)
+	(pad "10" smd roundrect
+		(at -0.5 -0.76 90)
+		(size 0.3 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "fa628aed-f252-42d9-a621-1819e0240789")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Package_LGA.3dshapes/ST_HLGA-10_2x2mm_P0.5mm_LayoutBorder3x2y.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

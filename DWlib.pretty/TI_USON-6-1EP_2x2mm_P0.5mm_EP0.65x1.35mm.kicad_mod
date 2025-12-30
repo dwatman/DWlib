@@ -1,0 +1,232 @@
+(footprint "TI_USON-6-1EP_2x2mm_P0.5mm_EP0.65x1.35mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "https://www.ti.com/lit/ml/mpds564b/mpds564b.pdf")
+	(tags "TI USON NoLead")
+	(property "Reference" "REF**"
+		(at 0 -1.95 0)
+		(layer "F.SilkS")
+		(uuid "d4898600-e044-40da-becb-b2a5f53c51e2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TI_USON-6-1EP_2x2mm_P0.5mm_EP0.65x1.35mm"
+		(at 0 1.95 0)
+		(layer "F.Fab")
+		(uuid "56fa3840-0f87-43e0-be6a-30c44a680856")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ea1ea2f9-f29c-4f23-9a27-18652d55bb91")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9ca246b7-9c4e-4f4a-93cd-6692f5ff178c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1 -1.1)
+		(end 1 -1.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bc2ab182-6490-44ae-9007-2f4c54a94313")
+	)
+	(fp_line
+		(start 1 1.1)
+		(end -1 1.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "01801d60-1e1d-49c8-b357-5dd178c89729")
+	)
+	(fp_poly
+		(pts
+			(xy -1.48 -1.14) (xy -1.62 -1.33) (xy -1.34 -1.33)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "44657622-adbd-47d4-a024-5f0e83ca5824")
+	)
+	(fp_poly
+		(pts
+			(xy -0.8 -1.1) (xy -1 -0.9) (xy -1.2 -1.1)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "119566db-1136-43b7-951d-a9fad7dbcbcc")
+	)
+	(fp_line
+		(start -1.4 -1.25)
+		(end 1.4 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "dd37f612-8cc7-4b7a-b533-00fc78745bd7")
+	)
+	(fp_line
+		(start -1.4 1.25)
+		(end -1.4 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "390d11a3-2ff0-48e0-8840-86e2a19b92d4")
+	)
+	(fp_line
+		(start 1.4 -1.25)
+		(end 1.4 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "52b46630-0f11-4b8d-ac83-c88a83716524")
+	)
+	(fp_line
+		(start 1.4 1.25)
+		(end -1.4 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ee6e8c5b-0317-4d7f-b149-daac60ddb258")
+	)
+	(fp_poly
+		(pts
+			(xy -1 -0.7) (xy -1 1) (xy 1 1) (xy 1 -1) (xy -0.7 -1)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f00f3278-6549-4d2d-918f-d9bceeece06e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "415e0ca8-8853-4cf5-a270-d2985b263e3c")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.11)
+			)
+		)
+	)
+	(pad "" smd roundrect
+		(at 0 0)
+		(size 0.62 1.25)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "4a961ab1-cc2c-4933-b642-c194022f60e5")
+	)
+	(pad "1" smd roundrect
+		(at -0.95 -0.65)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "b4a08e87-f679-45b8-8a78-b74afa4a709d")
+	)
+	(pad "2" smd roundrect
+		(at -0.95 0)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "691acc5c-cb9a-4659-8fdd-1ea9dd5947d8")
+	)
+	(pad "3" smd roundrect
+		(at -0.95 0.65)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "b700b303-9eef-4b3d-9f4c-bef4d7f8615d")
+	)
+	(pad "4" smd roundrect
+		(at 0.95 0.65)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "74737bce-12c9-45af-a13b-9e049a93b1a5")
+	)
+	(pad "5" smd roundrect
+		(at 0.95 0)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "29d2e8aa-4bc5-4d0f-bcc0-9250380c2dbc")
+	)
+	(pad "6" smd roundrect
+		(at 0.95 -0.65)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "9a9599d9-bb35-49ac-8579-c1106e281b9e")
+	)
+	(pad "7" smd roundrect
+		(at 0 0)
+		(size 0.65 1.35)
+		(property pad_prop_heatsink)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.1)
+		(zone_connect 2)
+		(uuid "976d05a3-a399-43bf-878a-6f813543a289")
+	)
+	(embedded_fonts no)
+	(model "../library/3dmodels/TI_USON-6_OPT4001DNPRQ1.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

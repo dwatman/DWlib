@@ -1,0 +1,202 @@
+(footprint "Osram_LED_SFH-4243"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Osram SFH 4243 LED ")
+	(tags "LED")
+	(property "Reference" "REF**"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(uuid "d8c257fc-538f-4803-8b55-bb54dd99ab15")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Osram_LED_SFH-4243"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(uuid "fefc7411-6816-4f7a-9296-4a244dead9b3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9e64ef3e-8c9c-4931-84d8-3285ab7710c0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "92c0dcec-0070-421b-8666-e6f99594bd62")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -2.25 1.3)
+		(end -0.8 -1.3)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "7da5467a-ed9f-4a1e-8fc4-f111f5555939")
+	)
+	(fp_rect
+		(start 0.8 1.3)
+		(end 2.25 -1.3)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "54469113-b47e-4129-b47e-fa2139a6f216")
+	)
+	(fp_line
+		(start -2.4 -1.6)
+		(end -2.4 1.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "08e68519-2531-4c11-9f2c-7838c27a556c")
+	)
+	(fp_line
+		(start -2.4 1.6)
+		(end 1.7 1.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "128e91ca-29a5-46e1-ad85-6d662edf8b43")
+	)
+	(fp_line
+		(start 1.7 -1.6)
+		(end -2.4 -1.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1072ee59-f953-4b77-9ccf-a92f589ccf34")
+	)
+	(fp_poly
+		(pts
+			(xy -2.4 -1.2) (xy -2 -1.6) (xy -2.4 -1.6)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "9fff38cf-28d3-47b2-b125-94280b6696ad")
+	)
+	(fp_rect
+		(start -5 2.2)
+		(end 5 -2.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a3d18fee-c739-4fcd-b91d-6758f541e83e")
+	)
+	(fp_line
+		(start -1.1 -1.5)
+		(end -1.7 -0.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "602afa51-771c-4ebb-8e02-e1dac9d0babc")
+	)
+	(fp_rect
+		(start -1.7 1.5)
+		(end 1.7 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b84f495a-9472-4cf4-abea-84442f26f03f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "0de15aa0-2c8d-4dd4-8dd9-d1809f26f6da")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "" smd roundrect
+		(at -1.5 0)
+		(size 1.4 2.5)
+		(layers "F.Paste")
+		(roundrect_rratio 0.1)
+		(uuid "e150b528-2e3a-4362-a8b8-64bb7c479fc8")
+	)
+	(pad "" smd roundrect
+		(at 1.5 0)
+		(size 1.4 2.5)
+		(layers "F.Paste")
+		(roundrect_rratio 0.1)
+		(uuid "59b9bf1d-a2cf-4935-b414-49771373574f")
+	)
+	(pad "1" smd roundrect
+		(at -2.8 0)
+		(size 4 4)
+		(layers "F.Cu")
+		(roundrect_rratio 0.1)
+		(uuid "095d8f4c-7cfd-4cd2-9e68-7dc7f37c93bf")
+	)
+	(pad "2" smd roundrect
+		(at 2.8 0)
+		(size 4 4)
+		(layers "F.Cu")
+		(roundrect_rratio 0.1)
+		(uuid "1d46ab76-2eb8-452c-97e8-1bbeb8708456")
+	)
+	(embedded_fonts no)
+	(model "../3dmodels/Osram_SFH_4243.STEP"
+		(offset
+			(xyz 0 0 1.8)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 90)
+		)
+	)
+)

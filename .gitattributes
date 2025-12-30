@@ -1,0 +1,12 @@
+# ==========================================
+# Git LFS — binary or large files
+# ==========================================
+*.step  filter=lfs diff=lfs merge=lfs -text
+*.STEP  filter=lfs diff=lfs merge=lfs -text
+*.stp   filter=lfs diff=lfs merge=lfs -text
+
+# ==========================================
+# Text-based files (normal Git handling)
+# ==========================================
+*.kicad_sym text
+*.kicad_mod text

@@ -1,0 +1,220 @@
+(footprint "TI_SOT-5X3_OPT4001DTSR"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "https://www.ti.com/lit/ml/mpss136d/mpss136d.pdf")
+	(tags "OPT4001DTSR ")
+	(property "Reference" "REF**"
+		(at 0 -2.25 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "26d56906-5db3-4987-956d-f0cce079d432")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TI_SOT-5X3_OPT4001DTSR"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "75e6a31b-2ac9-414f-a12d-20262e472fa8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "46cb4254-a8cb-4d91-bff5-71177a91eca5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1f34249a-7b9d-4ee1-8d9a-7c10fcf14aab")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.6 -1.1)
+		(end 0.6 -1.1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "22f29b63-e011-41a3-afe8-8eab308f10d0")
+	)
+	(fp_line
+		(start -0.6 1.1)
+		(end 0.6 1.1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "36d8fd0a-ca2d-49b5-b335-b3de2122f068")
+	)
+	(fp_poly
+		(pts
+			(xy -0.771374 -1.25) (xy -1.021374 -1) (xy -1.271374 -1.25)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "a9b94b6f-5a2a-46d8-b54d-d5074a855792")
+	)
+	(fp_rect
+		(start -1.4 -1.4)
+		(end 1.4 1.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "d599c22f-b974-49bb-86c4-37ba06b7d232")
+	)
+	(fp_line
+		(start -0.650001 -1.1)
+		(end 0.650001 -1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2ab1fe6d-a861-4d79-a93d-06b6d6669fdb")
+	)
+	(fp_line
+		(start -0.650001 1.1)
+		(end -0.650001 -1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8d46932d-0a81-45d9-a653-b5d6afedebe9")
+	)
+	(fp_line
+		(start -0.650001 1.1)
+		(end 0.650001 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3af01bce-437a-4a41-b858-6b9a3540f7f8")
+	)
+	(fp_line
+		(start 0.650001 1.1)
+		(end 0.650001 -1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "96866c61-1610-4244-8ccf-bc4ac1f8ee15")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "35d180c7-1431-442f-8254-9a409f3d4f2f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.86 -0.75)
+		(size 0.72 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "94ccc321-e9c9-4414-8042-1c7161c78061")
+	)
+	(pad "2" smd roundrect
+		(at -0.86 -0.25)
+		(size 0.72 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "5ff8f39a-72a1-46e0-a639-2facdb047d76")
+	)
+	(pad "3" smd roundrect
+		(at -0.86 0.25)
+		(size 0.72 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "7ef7c4c9-e582-408e-8a69-4e5dcb85f033")
+	)
+	(pad "4" smd roundrect
+		(at -0.86 0.75)
+		(size 0.72 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "8a12d1f6-9169-48eb-b462-b000332a3db3")
+	)
+	(pad "5" smd roundrect
+		(at 0.86 0.75)
+		(size 0.72 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "e316ace7-0ac3-4035-8d95-0b7550a49a4c")
+	)
+	(pad "6" smd roundrect
+		(at 0.86 0.25)
+		(size 0.72 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "3d621bd6-88d9-4f1f-88d6-07bb874200ff")
+	)
+	(pad "7" smd roundrect
+		(at 0.86 -0.25)
+		(size 0.72 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "7cf7fa0f-41c1-4908-90c0-feb530b77e39")
+	)
+	(pad "8" smd roundrect
+		(at 0.86 -0.75)
+		(size 0.72 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "ccdb84ff-803d-4cbc-b776-35775cb9dc9f")
+	)
+	(embedded_fonts no)
+	(model "../library/3dmodels/TI_SOT-5X3_OPT4001DTSR.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
