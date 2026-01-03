@@ -1,0 +1,224 @@
+(footprint "Converter_DCDC_GAPTEC_LMW78_THT"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "DCDC-Converter, GAPTEC, GAPTEC_LMW78, SIP-3, pitch 2.54mm, package size 11.5x9x17.5mm^3, https://gaptec-electronic.com/datenblaetter/LMW78_0.5R.pdf")
+	(tags "dc-dc gaptec buck sip-3 pitch 2.54mm")
+	(property "Reference" "REF**"
+		(at 2.6 7.8 0)
+		(layer "F.SilkS")
+		(uuid "5bdb2502-e753-4a1c-9116-4dabd868d429")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Converter_DCDC_GAPTEC_LMW78_THT"
+		(at 3.81 3 0)
+		(layer "F.Fab")
+		(uuid "4e6c064e-6e5f-4117-ad60-0570407fb6fe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "70d4d779-2385-4f84-ab3a-6025a18a75bd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6882d523-10ae-41f5-a644-f10f53c52c53")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -3.56 -2.5)
+		(end -2.32 -2.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4c28f653-58ed-46fc-96d8-2809d5ad19e5")
+	)
+	(fp_line
+		(start -3.56 -1.26)
+		(end -3.56 -2.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6dbec05a-6abb-49ae-8697-76643cefd329")
+	)
+	(fp_line
+		(start -3.32 -2.26)
+		(end -3.32 7)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0bbcbb71-8076-4b41-8f78-89d28b690ef5")
+	)
+	(fp_line
+		(start -3.32 7)
+		(end 8.4 7)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "535b450d-a70a-44f8-bf31-ac6d6a61bd21")
+	)
+	(fp_line
+		(start 8.4 -2.26)
+		(end -3.32 -2.26)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "189e4df8-adcf-44a2-ad00-a1ec62a48e16")
+	)
+	(fp_line
+		(start 8.4 7)
+		(end 8.4 -2.26)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "706eaa5a-f977-4483-a754-b016c962a6be")
+	)
+	(fp_rect
+		(start -4.05 -3)
+		(end 9 7.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "eb1da0b2-7214-493f-9db9-d268804dd4bb")
+	)
+	(fp_line
+		(start -3.2 -0.95)
+		(end -3.2 6.85)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "568ca73b-7992-47ab-94cc-5b3fe9324322")
+	)
+	(fp_line
+		(start -3.2 6.85)
+		(end 8.3 6.85)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9e0b79c8-65e0-474f-a230-0e691530f7df")
+	)
+	(fp_line
+		(start -2 -2.15)
+		(end -3.2 -0.95)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "816c8d6c-6dd7-4a9f-b505-c236b30f3db4")
+	)
+	(fp_line
+		(start 8.3 -2.15)
+		(end -2 -2.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "99a656e6-637e-4b98-a7bd-d36b6ddd8fdf")
+	)
+	(fp_line
+		(start 8.3 6.85)
+		(end 8.3 -2.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "eff1e855-fd95-4e6f-a4eb-2c4ce2128a94")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.5 3 0)
+		(layer "F.Fab")
+		(uuid "2f8d5626-55a6-42f0-8a43-50d5af312a18")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 1.5 2)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.1666666667)
+		(uuid "0cb1c939-4f35-4355-a8f2-22adc71e8797")
+	)
+	(pad "2" thru_hole oval
+		(at 2.54 0)
+		(size 1.5 2)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "360ff68c-24e3-4b34-8c07-a4e64dbc1260")
+	)
+	(pad "3" thru_hole oval
+		(at 5.08 0)
+		(size 1.5 2)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dda2df48-02e2-4e7b-8d38-b1f21c390bfd")
+	)
+	(embedded_fonts no)
+	(model "/home/daniel/git/cryocooler-driver/Electronics/DWlib/3dmodels/Gaptec_LMW78.step"
+		(offset
+			(xyz 2.54 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
