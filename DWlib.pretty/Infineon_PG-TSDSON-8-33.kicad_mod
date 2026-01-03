@@ -1,0 +1,312 @@
+(footprint "Infineon_PG-TSDSON-8-33"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Infineon, PG-TSDSON-8-33, 3.3x3.3x1mm, 0.65mm Pitch, Exposed Paddle, https://www.infineon.com/package/PG-TSDSON-8-33")
+	(tags "tison")
+	(property "Reference" "REF**"
+		(at 0 -2.4 0)
+		(layer "F.SilkS")
+		(uuid "e58823b8-18c2-4ec3-bb95-26879166877f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Infineon_PG-TSDSON-8-33"
+		(at 0 2.6 0)
+		(layer "F.Fab")
+		(uuid "a56388a7-9952-48c4-9a33-4178d586c79c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bc58bf6f-621b-4735-89c5-90508d89b8f4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d6499305-9c56-4c82-ae21-4131e8036913")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(solder_paste_margin -0.05)
+	(attr smd)
+	(fp_line
+		(start 1.7 -1.7)
+		(end -1.7 -1.7)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b5541088-2df3-461e-a144-aee81085fe04")
+	)
+	(fp_line
+		(start 1.7 1.7)
+		(end -1.7 1.7)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ac465ca3-f8a0-43c9-9dfa-74ed29846a60")
+	)
+	(fp_poly
+		(pts
+			(xy -2.1 -1) (xy -2.3 -0.8) (xy -2.3 -1.2) (xy -2.1 -1)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "72e68338-4f1e-4b5b-8d2d-4b146ca7e394")
+	)
+	(fp_line
+		(start -2.1 -1.8)
+		(end 2.1 -1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0f6d68f4-6a97-4d5f-ab8a-3af0a2f521d6")
+	)
+	(fp_line
+		(start -2.1 1.8)
+		(end -2.1 -1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "802b737a-2aeb-42d8-82f1-077f9b8726a9")
+	)
+	(fp_line
+		(start 2.1 -1.8)
+		(end 2.1 1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3395d26f-0fa3-4116-b169-bdf7ecd1e0e7")
+	)
+	(fp_line
+		(start 2.1 1.8)
+		(end -2.1 1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "20ef52c8-cdf3-429a-802b-69b8fe2ecb3b")
+	)
+	(fp_line
+		(start -1.65 -1.25)
+		(end -1.65 1.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c0f66d7c-7a82-44a7-a992-91a95c2502bb")
+	)
+	(fp_line
+		(start -1.25 -1.65)
+		(end -1.65 -1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f314ab3a-71cb-414f-8580-e87453e3c8b1")
+	)
+	(fp_line
+		(start -1.25 -1.65)
+		(end 1.65 -1.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "38d449e9-6877-40ba-be8e-0eea9ee7bf01")
+	)
+	(fp_line
+		(start 1.65 -1.65)
+		(end 1.65 1.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8f4feaf7-06af-4c55-95f3-fbe98f508ac5")
+	)
+	(fp_line
+		(start 1.65 1.65)
+		(end -1.65 1.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7eb4c171-2422-4cdc-b92d-c1c480d00abd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "d04d2b56-e1bf-4d9d-91ed-1a7d0f544a23")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" smd roundrect
+		(at -1.695 -0.975)
+		(size 0.3 0.24)
+		(layers "F.Paste")
+		(roundrect_rratio 0.2083333333)
+		(uuid "333c1228-b8d4-4a38-ba5d-e73ff043c5bb")
+	)
+	(pad "" smd roundrect
+		(at -1.695 -0.325)
+		(size 0.3 0.24)
+		(layers "F.Paste")
+		(roundrect_rratio 0.2083333333)
+		(uuid "f04355b5-a727-40db-9262-e05c1b7572e3")
+	)
+	(pad "" smd roundrect
+		(at -1.695 0.325)
+		(size 0.3 0.24)
+		(layers "F.Paste")
+		(roundrect_rratio 0.2083333333)
+		(uuid "4d9e43ea-cd35-47f5-8122-d28b79c2ad2b")
+	)
+	(pad "" smd roundrect
+		(at -1.45 0.975)
+		(size 0.7 0.24)
+		(layers "F.Paste")
+		(roundrect_rratio 0.2083333333)
+		(uuid "3921b1b7-9f3b-4c51-a004-1c708611aa36")
+	)
+	(pad "" smd roundrect
+		(at -1.22 -0.76)
+		(size 0.35 0.67)
+		(layers "F.Paste")
+		(roundrect_rratio 0.1428571429)
+		(uuid "5f09eb71-e8eb-454e-b4a3-366491befec0")
+	)
+	(pad "" smd roundrect
+		(at -1.22 0.11)
+		(size 0.35 0.67)
+		(layers "F.Paste")
+		(roundrect_rratio 0.1428571429)
+		(uuid "3ea3e4f3-df5a-46ab-83a9-6891fcd9a8ec")
+	)
+	(pad "" smd roundrect
+		(at 0.35 -0.975)
+		(size 1.4 0.24)
+		(layers "F.Paste")
+		(roundrect_rratio 0.2083333333)
+		(uuid "a1cfa2b6-b4b8-4d5f-b804-975b46b31469")
+	)
+	(pad "" smd roundrect
+		(at 0.35 0)
+		(size 1.4 1.09)
+		(layers "F.Paste")
+		(roundrect_rratio 0.04587155963)
+		(uuid "d56e0ae7-0865-41b7-ad3e-35c9bd165c91")
+	)
+	(pad "" smd roundrect
+		(at 0.35 0.975)
+		(size 1.4 0.24)
+		(layers "F.Paste")
+		(roundrect_rratio 0.2083333333)
+		(uuid "2f4bf752-51bd-45ca-862c-2c8105329473")
+	)
+	(pad "" smd roundrect
+		(at 1.55 -0.975)
+		(size 0.6 0.24)
+		(layers "F.Paste")
+		(roundrect_rratio 0.2083333333)
+		(uuid "802a0143-3105-4d1a-b38f-82ee8b290ebe")
+	)
+	(pad "" smd roundrect
+		(at 1.55 -0.325)
+		(size 0.6 0.24)
+		(layers "F.Paste")
+		(roundrect_rratio 0.2083333333)
+		(uuid "8dd26fd4-5d33-42dd-8d77-522cc974e44d")
+	)
+	(pad "" smd roundrect
+		(at 1.55 0.325)
+		(size 0.6 0.24)
+		(layers "F.Paste")
+		(roundrect_rratio 0.2083333333)
+		(uuid "b708fe6c-0949-466e-b69a-8c13cd1b7572")
+	)
+	(pad "" smd roundrect
+		(at 1.55 0.975)
+		(size 0.6 0.24)
+		(layers "F.Paste")
+		(roundrect_rratio 0.2083333333)
+		(uuid "498de95b-1a23-421e-bf89-df7062f5caa3")
+	)
+	(pad "1" smd rect
+		(at -1.45 -0.325)
+		(size 0.9 1.64)
+		(layers "F.Cu" "F.Mask")
+		(uuid "3f36d86e-9694-4f5d-8d70-05df2aa55b59")
+	)
+	(pad "2" smd rect
+		(at -1.45 0.975)
+		(size 0.9 0.34)
+		(layers "F.Cu" "F.Mask")
+		(uuid "4ed75d50-529d-48bb-951c-634e388a9ad1")
+	)
+	(pad "3" smd rect
+		(at 0.7 0)
+		(size 2.36 2.29)
+		(layers "F.Cu" "F.Mask")
+		(uuid "01e8cde1-280d-4f88-9dfc-8821d45f480c")
+	)
+	(embedded_fonts no)
+	(model "../3dmodels/Infineon_PG-TSDSON-8-33.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
