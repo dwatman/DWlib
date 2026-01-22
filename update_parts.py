@@ -10,7 +10,11 @@ MASTER_CSV_NAME = "master_parts.csv"
 FIELDS_TO_EXTRACT = {
 	"MPN": "MPN",
 	"Mouser": "Mouser PN",
-	"Digikey": "Digikey PN"
+	"Digikey": "Digikey PN",
+	"Manufacturer": "Manufacturer",
+	"Tolerance": "Tolerance",
+	"Extra": "Extra",
+	"Description": "Description"
 }
 
 # Component types where we should parse and normalize values
@@ -234,6 +238,11 @@ def should_exclude_component(block_text):
 
 	return False
 
+def extract_lib_id(block_text):
+	"""Extract the lib_id (symbol) from the component block"""
+	match = re.search(r'\(lib_id\s+"([^"]+)"', block_text)
+	return match.group(1) if match else ""
+
 def parse_schematic_file(filepath):
 	"""Parses KiCad 9 S-expressions, skipping library definitions."""
 	with open(filepath, 'r', encoding='utf-8') as f:
@@ -271,6 +280,10 @@ def parse_schematic_file(filepath):
 		# Skip reference designators starting with # (power symbols, etc.)
 		if refdes.startswith("#"):
 			continue
+
+		# Extract lib_id (symbol)
+		lib_id = extract_lib_id(block_text)
+		props["_lib_id"] = lib_id
 
 		# Deduplicate multi-unit parts (U1A, U1B -> U1)
 		base_refdes = strip_designator_suffix(refdes)
@@ -311,6 +324,14 @@ def scan_project_folder(folder_path):
 			footprint = props.get("Footprint", "").strip()
 			mouser = props.get(FIELDS_TO_EXTRACT["Mouser"], "").strip()
 			digikey = props.get(FIELDS_TO_EXTRACT["Digikey"], "").strip()
+			manufacturer = props.get(FIELDS_TO_EXTRACT["Manufacturer"], "").strip()
+			tolerance = props.get(FIELDS_TO_EXTRACT["Tolerance"], "").strip()
+			extra = props.get(FIELDS_TO_EXTRACT["Extra"], "").strip()
+
+			# Extract new fields
+			description = props.get(FIELDS_TO_EXTRACT["Description"], "").strip()
+			symbol = props.get("_lib_id", "").strip()
+			datasheet = props.get("Datasheet", "").strip()
 
 			# Skip parts with no valid footprint
 			if not footprint:
@@ -340,10 +361,17 @@ def scan_project_folder(folder_path):
 				"Type": comp_type,
 				"Value": val,
 				"Voltage": voltage,
+				"Tolerance": tolerance,
+				"Extra": extra,
 				"Footprint": footprint,
+				"Stock": "",  # Empty, for manual entry
+				"Manufacturer": manufacturer,
 				"MPN": mpn,
 				"Digikey PN": digikey,
 				"Mouser PN": mouser,
+				"Description": description,
+				"Symbol": symbol,
+				"Datasheet": datasheet,
 				"Projects": {project_name},
 				"Last Used": date_str
 			}
@@ -375,10 +403,17 @@ def load_master_csv(filepath):
 				"Type": row['Type'],
 				"Value": row['Value'],
 				"Voltage": row.get('Voltage', ''),
+				"Tolerance": row.get('Tolerance', ''),
+				"Extra": row.get('Extra', ''),
 				"Footprint": row['Footprint'],
+				"Stock": row.get('Stock', ''),
+				"Manufacturer": row.get('Manufacturer', ''),
 				"MPN": mpn,
 				"Digikey PN": row['Digikey PN'],
 				"Mouser PN": row['Mouser PN'],
+				"Description": row.get('Description', ''),
+				"Symbol": row.get('Symbol', ''),
+				"Datasheet": row.get('Datasheet', ''),
 				"Projects": projs,
 				"Last Used": row['Last Used']
 			}
@@ -397,17 +432,50 @@ def merge_data(master_data, new_data):
 				continue
 
 			updated = False
-			# Update blank vendor fields
+			# Update blank fields (but preserve Stock manually entered)
 			if not existing['Mouser PN'] and new_part['Mouser PN']:
 				existing['Mouser PN'] = new_part['Mouser PN']
 				updated = True
 			if not existing['Digikey PN'] and new_part['Digikey PN']:
 				existing['Digikey PN'] = new_part['Digikey PN']
 				updated = True
-
-			# Update Voltage if missing
 			if not existing['Voltage'] and new_part['Voltage']:
 				existing['Voltage'] = new_part['Voltage']
+				updated = True
+			if not existing['Tolerance'] and new_part['Tolerance']:
+				existing['Tolerance'] = new_part['Tolerance']
+				updated = True
+			if not existing['Manufacturer'] and new_part['Manufacturer']:
+				existing['Manufacturer'] = new_part['Manufacturer']
+				updated = True
+			if not existing['Datasheet'] and new_part['Datasheet']:
+				existing['Datasheet'] = new_part['Datasheet']
+				updated = True
+			if not existing['Extra'] and new_part['Extra']:
+				existing['Extra'] = new_part['Extra']
+				updated = True
+
+			# Always update Description and Symbol to newest (with warning if changed)
+			if existing['Description'] != new_part['Description'] and new_part['Description']:
+				if existing['Description']:
+					print(f"INFO: Updating description for {mpn}")
+					print(f"  > Old: {existing['Description']}")
+					print(f"  > New: {new_part['Description']}")
+				existing['Description'] = new_part['Description']
+				updated = True
+			elif not existing['Description'] and new_part['Description']:
+				existing['Description'] = new_part['Description']
+				updated = True
+
+			if existing['Symbol'] != new_part['Symbol'] and new_part['Symbol']:
+				if existing['Symbol']:
+					print(f"INFO: Updating symbol for {mpn}")
+					print(f"  > Old: {existing['Symbol']}")
+					print(f"  > New: {new_part['Symbol']}")
+				existing['Symbol'] = new_part['Symbol']
+				updated = True
+			elif not existing['Symbol'] and new_part['Symbol']:
+				existing['Symbol'] = new_part['Symbol']
 				updated = True
 
 			new_proj = list(new_part['Projects'])[0]
@@ -483,7 +551,14 @@ def main():
 		)
 	)
 
-	fieldnames = ["Type", "Value", "Voltage", "Footprint", "MPN", "Digikey PN", "Mouser PN", "Last Used", "Used In"]
+	# Column order optimized for visibility and workflow
+	fieldnames = [
+		"Type", "Value", "Voltage", "Tolerance", "Extra", "Footprint",
+		"Stock",
+		"Manufacturer", "MPN", "Digikey PN", "Mouser PN",
+		"Description", "Symbol", "Datasheet",
+		"Last Used", "Used In"
+	]
 
 	try:
 		with open(master_path, 'w', newline='', encoding='utf-8') as csvfile:
