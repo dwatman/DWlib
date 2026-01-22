@@ -20,6 +20,13 @@ FIELDS_TO_EXTRACT = {
 # Component types where we should parse and normalize values
 VALUE_PARSE_TYPES = {'R', 'C', 'L', 'D', 'BT', 'F', 'FB', 'Y', 'Z'}
 
+def clean_field_value(value):
+	"""Treat ~ or - as empty field values (KiCad placeholders)"""
+	cleaned = value.strip()
+	if cleaned in ['~', '-']:
+		return ""
+	return cleaned
+
 def extract_voltage(value_str):
 	"""Extract voltage from value string (e.g., '100n 16V' -> ('100n', '16V'))"""
 	if not value_str:
@@ -314,24 +321,24 @@ def scan_project_folder(folder_path):
 
 		for props in found_components:
 			refdes = props.get("Reference", "")
-			mpn = props.get(FIELDS_TO_EXTRACT["MPN"], "").strip()
+			mpn = clean_field_value(props.get(FIELDS_TO_EXTRACT["MPN"], ""))
 
 			if not mpn:
 				continue
 
-			val = props.get("Value", "").strip()
-			voltage = props.get("Voltage", "").strip()
-			footprint = props.get("Footprint", "").strip()
-			mouser = props.get(FIELDS_TO_EXTRACT["Mouser"], "").strip()
-			digikey = props.get(FIELDS_TO_EXTRACT["Digikey"], "").strip()
-			manufacturer = props.get(FIELDS_TO_EXTRACT["Manufacturer"], "").strip()
-			tolerance = props.get(FIELDS_TO_EXTRACT["Tolerance"], "").strip()
-			extra = props.get(FIELDS_TO_EXTRACT["Extra"], "").strip()
+			val = clean_field_value(props.get("Value", ""))
+			voltage = clean_field_value(props.get("Voltage", ""))
+			footprint = clean_field_value(props.get("Footprint", ""))
+			mouser = clean_field_value(props.get(FIELDS_TO_EXTRACT["Mouser"], ""))
+			digikey = clean_field_value(props.get(FIELDS_TO_EXTRACT["Digikey"], ""))
+			manufacturer = clean_field_value(props.get(FIELDS_TO_EXTRACT["Manufacturer"], ""))
+			tolerance = clean_field_value(props.get(FIELDS_TO_EXTRACT["Tolerance"], ""))
+			extra = clean_field_value(props.get(FIELDS_TO_EXTRACT["Extra"], ""))
 
 			# Extract new fields
-			description = props.get(FIELDS_TO_EXTRACT["Description"], "").strip()
-			symbol = props.get("_lib_id", "").strip()
-			datasheet = props.get("Datasheet", "").strip()
+			description = clean_field_value(props.get(FIELDS_TO_EXTRACT["Description"], ""))
+			symbol = clean_field_value(props.get("_lib_id", ""))
+			datasheet = clean_field_value(props.get("Datasheet", ""))
 
 			# Skip parts with no valid footprint
 			if not footprint:
